@@ -1,7 +1,7 @@
 const config = {
     'npmPackages': [
         {
-            "title": "Flow MCP",
+            "title": "Flow MCP (Core)",
             "githubUserName": "FlowMCP",
             "githubRepository": "flowMCP"
         },
