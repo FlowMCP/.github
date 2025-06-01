@@ -9,8 +9,3 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 | [Flow MCP (Servers)](https://github.com/flowMCP/flowMCP-servers) | <a href="https://api.github.com/repos/flowMCP/flowMCP-servers"><img src="https://img.shields.io/github/last-commit/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/stargazers"><img src="https://img.shields.io/github/stars/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/commit/main"><img src="https://img.shields.io/github/commit-activity/t/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/graphs/contributors"><img src="https://img.shields.io/github/contributors/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/blob/main/LICENSE"><img src="https://img.shields.io/github/license/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
 
 This table is generated using https://github.com/a6b8/badgeTable
-
-
-## Links
-➡️ Local server (coming soon...)  
-➡️ Remote server (coming soon...)
