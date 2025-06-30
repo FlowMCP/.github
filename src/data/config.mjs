@@ -54,7 +54,7 @@ const config = [
                         {
                 "title": "x402-mcp-middleware",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-middlewaree"
+                "githubRepository": "x402-mcp-middleware"
             }
         ]
     }
