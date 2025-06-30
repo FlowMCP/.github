@@ -2,7 +2,7 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
-## Repos
+## Modules
 | Title | Updated | Release | Tests | Issues | License |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | [flowmcp-core](https://github.com/FlowMCP/flowMCP-core) | <a href="https://api.github.com/repos/FlowMCP/flowMCP-core"><img src="https://img.shields.io/github/last-commit/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/releases/"><img src="https://img.shields.io/github/v/release/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core"><img src="https://img.shields.io/circleci/build/github/FlowMCP/flowMCP-core?logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/issues/"><img src="https://img.shields.io/github/issues/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/FlowMCP/flowMCP-core/issues/"><img src="https://img.shields.io/github/issues-closed/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/blob/main/LICENSE"><img src="https://img.shields.io/github/license/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
@@ -10,6 +10,9 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 | [flowmcp-servers](https://github.com/flowMCP/flowMCP-servers) | <a href="https://api.github.com/repos/flowMCP/flowMCP-servers"><img src="https://img.shields.io/github/last-commit/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/releases/"><img src="https://img.shields.io/github/v/release/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers"><img src="https://img.shields.io/circleci/build/github/flowMCP/flowMCP-servers?logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/issues/"><img src="https://img.shields.io/github/issues/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/flowMCP/flowMCP-servers/issues/"><img src="https://img.shields.io/github/issues-closed/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/flowMCP-servers/blob/main/LICENSE"><img src="https://img.shields.io/github/license/flowMCP/flowMCP-servers?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
 
 This table is generated using https://github.com/a6b8/badgeTable
+
+## x402
+{{402}}
 
 ## Community Server
 | Title | Updated | Uptime | Release | Tests | Url |
@@ -19,5 +22,4 @@ This table is generated using https://github.com/a6b8/badgeTable
 
 This table is generated using https://github.com/a6b8/badgeTable
 
-## x402
-{{402}}
+
