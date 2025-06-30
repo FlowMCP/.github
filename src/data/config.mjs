@@ -6,17 +6,20 @@ const config = [
             {
                 "title": "flowmcp-core",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "flowMCP-core"
+                "githubRepository": "flowMCP-core",
+                "githubWorkflowPath": "test-on-release.yml"
             },
             {
                 "title": "flowmcp-schemas",
                 "githubUserName": "flowMCP",
-                "githubRepository": "flowMCP-schemas"
+                "githubRepository": "flowMCP-schemas",
+                "githubWorkflowPath": "test-on-release.yml"
             },
             {
                 "title": "flowmcp-servers",
                 "githubUserName": "flowMCP",
-                "githubRepository": "flowMCP-servers"
+                "githubRepository": "flowMCP-servers",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
@@ -49,12 +52,14 @@ const config = [
             {
                 "title": "x402-core",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "x402-core"
+                "githubRepository": "x402-core",
+                "githubWorkflowPath": "test-on-release.yml"
             },
                         {
                 "title": "x402-mcp-middleware",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-middleware"
+                "githubRepository": "x402-mcp-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     }
