@@ -20,7 +20,10 @@ const config = {
         {
             "title": "Flow MCP (Community Server)",
             "githubUserName": "flowMCP",
-            "githubRepository": "community-server"
+            "githubRepository": "community-server",
+            "imageUrl": "",
+            "uptimeRobotId": "800841892",
+            "url": "https://community.flowmcp.org"
         }
     ]
 } 
