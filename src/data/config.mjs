@@ -13,7 +13,7 @@ const config = [
                 "title": "flowmcp-schemas",
                 "githubUserName": "flowMCP",
                 "githubRepository": "flowMCP-schemas",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "update-readme.yaml"
             },
             {
                 "title": "flowmcp-servers",
