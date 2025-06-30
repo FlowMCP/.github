@@ -6,7 +6,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 {{githubDetails}}
 
 ## x402
-{{402}}
+{{x402}}
 
 ## Community Server
 {{documentationRepository}}
