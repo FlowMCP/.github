@@ -16,7 +16,7 @@ const config = {
             "githubRepository": "flowMCP-servers"
         }
     ],
-    'documentationWebsite': [
+    'documentationRepository': [
         {
             "title": "Flow MCP (Community Server)",
             "githubUserName": "flowMCP",
