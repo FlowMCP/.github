@@ -1,28 +1,28 @@
 const config = {
     'githubDetails': [
         {
-            "title": "Flow MCP (Core)",
+            "title": "flowmcp-core",
             "githubUserName": "FlowMCP",
-            "githubRepository": "flowMCP"
+            "githubRepository": "flowMCP-core"
         },
         {
-            "title": "Flow MCP (Schemas)",
+            "title": "flowmcp-schemas",
             "githubUserName": "flowMCP",
             "githubRepository": "flowMCP-schemas"
         },
         {
-            "title": "Flow MCP (Servers)",
+            "title": "flowmcp-servers",
             "githubUserName": "flowMCP",
             "githubRepository": "flowMCP-servers"
         }
     ],
     'documentationRepository': [
         {
-            "title": "Flow MCP (Community Server)",
+            "title": "community-sever",
             "githubUserName": "flowMCP",
             "githubRepository": "community-server",
             "imageUrl": "",
-            "uptimeRobotId": "800841892",
+            "uptimeRobotId": "m800841892-66d45cc47d17f8587c3c969f",
             "url": "https://community.flowmcp.org"
         }
     ]
