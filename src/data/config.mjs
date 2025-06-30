@@ -31,7 +31,7 @@ const config = {
             "githubRepository": "www-flowmcp-org",
             "imageUrl": "",
             "uptimeRobotId": "m800843065-01b21fc8a0c00272f7e08839",
-            "url": "https://community.flowmcp.org"
+            "url": "https://www.flowmcp.org"
         }
     ]
 } 
