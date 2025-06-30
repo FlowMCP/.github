@@ -1,5 +1,5 @@
 const config = {
-    'npmPackages': [
+    'githubDetails': [
         {
             "title": "Flow MCP (Core)",
             "githubUserName": "FlowMCP",
@@ -14,7 +14,9 @@ const config = {
             "title": "Flow MCP (Servers)",
             "githubUserName": "flowMCP",
             "githubRepository": "flowMCP-servers"
-        },
+        }
+    ],
+    'documentationWebsite': [
         {
             "title": "Flow MCP (Community Server)",
             "githubUserName": "flowMCP",
