@@ -6,7 +6,10 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 {{githubDetails}}
 
 ## x402
+x402 is an open payment protocol designed for agentic commerce. It enables AI agents and applications to autonomously pay for APIs, data, and services using HTTP 402 responses and stablecoins like USDC. Learn more at [x402.org](https://x402.org).
 {{x402}}
+* `x402-core`: Authorization-based ERC20 payment layer using EIP-3009 and X-PAYMENT headers.
+* `x402-mcp-middleware`: An Express-compatible payment gateway middleware for X402-protected MCP endpoints.
 
 ## Community Server
 {{documentationRepository}}
