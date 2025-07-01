@@ -1,8 +1,6 @@
 # Overview
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
-
-## Modules
 | Title | Updated | Release | Workflow | Issues | License |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | [flowmcp-core](https://github.com/FlowMCP/flowMCP-core) | <a href="https://api.github.com/repos/FlowMCP/flowMCP-core"><img src="https://img.shields.io/github/last-commit/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/releases/"><img src="https://img.shields.io/github/v/release/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/actions"><img src="https://img.shields.io/github/actions/workflow/status/FlowMCP/flowMCP-core/test-on-release.yml?logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/issues/"><img src="https://img.shields.io/github/issues/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/FlowMCP/flowMCP-core/issues?q=is:issue%20state:closed"><img src="https://img.shields.io/github/issues-closed/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/flowMCP-core/blob/main/LICENSE"><img src="https://img.shields.io/github/license/FlowMCP/flowMCP-core?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
