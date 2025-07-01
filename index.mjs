@@ -9,20 +9,7 @@ const strs = config
     .reduce( ( acc, { preset, projects, replace } ) => {
         const badgeTable = btg
             .getTable( { preset, projects } )
-            .split( "\n" )
-            .reverse()
-            .reduce( ( acc, line, index ) => {
-                if( line.startsWith( '|' ) && acc.removed < 2 ) {
-                    acc.removed += 1
-                } else {
-                    acc.lines.push( line )
-                }
-        
-                return acc
-            }, { lines: [], removed: 0 } )
-            .lines
-            .reverse()
-
+            .replace( 'This table is generated using https://github.com/a6b8/badgeTable', '' )
         acc = acc.replace( replace, badgeTable )
         return acc
     }, template )
