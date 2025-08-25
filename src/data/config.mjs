@@ -1,7 +1,7 @@
 const config = [
     {
         'replace': '{{githubDetails}}',
-        'preset': 'githubDetails',
+        'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
                 "title": "flowmcp-core",
