@@ -25,7 +25,7 @@ const config = [
     },
     {
         'replace': '{{documentationRepository}}',
-        'preset': 'documentationRepository',
+        'preset': 'documentationRepositoryCodeCoverage',
         'projects': [
             {
                 "title": "community-sever",
