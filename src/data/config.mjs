@@ -15,14 +15,12 @@ const config = [
                 "githubRepository": "flowMCP-schemas",
                 "githubWorkflowPath": "update-readme.yaml"
             },
-        /*
             {
                 "title": "flowmcp-servers",
                 "githubUserName": "flowMCP",
                 "githubRepository": "flowMCP-servers",
                 "githubWorkflowPath": "test-on-release.yml"
             }
-        */
         ]
     },
     {
