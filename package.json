@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "badgetable": "^1.2.3"
+    "badgetable": "^1.3.0"
   }
 }
