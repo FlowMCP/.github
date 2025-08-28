@@ -67,7 +67,7 @@ const config = [
     },
         {
         'replace': '{{privateShare}}',
-        'preset': 'githubDetails',
+        'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
                 "title": "privateShare-core",
