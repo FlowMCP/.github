@@ -31,12 +31,9 @@ jobs:
           node index.mjs
 
       - name: Commit and Push Changes
-        env:
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config user.email "${{ secrets.USER_EMAIL }}"
-          git config user.name "a6b8"
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git add .
-          git commit -m "Update README"
+          git commit -m "Update README" || echo "No changes to commit"
           git push
