@@ -28,7 +28,6 @@ jobs:
 
       - name: Run Node.js Script
         run: |
-          cd .github
           node index.mjs
 
       - name: Commit and Push Changes
