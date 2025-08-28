@@ -64,6 +64,24 @@ const config = [
                 "githubWorkflowPath": "test-on-release.yml"
             }
         ]
+    },
+        {
+        'replace': '{{privateShare}}',
+        'preset': 'githubDetails',
+        'projects': [
+            {
+                "title": "privateShare-core",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "privateShare-core",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+                        {
+                "title": "privateShare-mcp-middleware",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "privateShare-mcp-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            }
+        ]
     }
 ]
 
