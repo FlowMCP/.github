@@ -9,7 +9,7 @@ x402 is an open payment protocol designed for agentic commerce. It enables AI ag
 * `x402-core`: Authorization-based ERC20 payment layer using EIP-3009 and X-PAYMENT headers.
 * `x402-mcp-middleware`: An Express-compatible payment gateway middleware for X402-protected MCP endpoints.
 
-privateShare
+## Private Share
 
 privateShare is a privacy-preserving payment system for MCP servers. It enables AI agents to pay for API access using encrypted
 ERC-20 (eERC-20) tokens with zero-knowledge proofs, ensuring transaction privacy while maintaining regulatory compliance. 
