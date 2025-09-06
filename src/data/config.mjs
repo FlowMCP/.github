@@ -20,6 +20,12 @@ const config = [
                 "githubUserName": "flowMCP",
                 "githubRepository": "flowMCP-servers",
                 "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "oauth-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "oauth-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
