@@ -52,13 +52,13 @@ const config = [
         'preset': 'githubDetails',
         'projects': [
             {
-                "title": "oauth-middleware",
+                "title": "mcp-oauth-middleware",
                 "githubUserName": "flowMCP",
-                "githubRepository": "oauth-middleware",
+                "githubRepository": "mcp-oauth-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
             },
             {
-                "title": "dynamic-tools-middleware",
+                "title": "mcp-dynamic-tools-middleware",
                 "githubUserName": "flowMCP",
                 "githubRepository": "mcp-dynamic-tools-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
