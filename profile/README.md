@@ -9,7 +9,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 
 
-## Mcp Middleware
+## MCP Middleware
 | Title | Updated | Release | Workflow | Issues | License |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | [mcp-auth-middleware](https://github.com/flowMCP/mcp-auth-middleware) | <a href="https://api.github.com/repos/flowMCP/mcp-auth-middleware"><img src="https://img.shields.io/github/last-commit/flowMCP/mcp-auth-middleware?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/mcp-auth-middleware/releases/"><img src="https://img.shields.io/github/v/release/flowMCP/mcp-auth-middleware?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/mcp-auth-middleware/actions"><img src="https://img.shields.io/github/actions/workflow/status/flowMCP/mcp-auth-middleware/test-on-release.yml?logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/mcp-auth-middleware/issues/"><img src="https://img.shields.io/github/issues/flowMCP/mcp-auth-middleware?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/flowMCP/mcp-auth-middleware/issues?q=is:issue%20state:closed"><img src="https://img.shields.io/github/issues-closed/flowMCP/mcp-auth-middleware?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/flowMCP/mcp-auth-middleware/blob/main/LICENSE"><img src="https://img.shields.io/github/license/flowMCP/mcp-auth-middleware?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
