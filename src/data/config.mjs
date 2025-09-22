@@ -52,9 +52,9 @@ const config = [
         'preset': 'githubDetails',
         'projects': [
             {
-                "title": "mcp-oauth-middleware",
+                "title": "mcp-auth-middleware",
                 "githubUserName": "flowMCP",
-                "githubRepository": "mcp-oauth-middleware",
+                "githubRepository": "mcp-auth-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
             },
             {
