@@ -30,7 +30,7 @@ const config = [
             {
                 "title": "dynamic-tools-middleware",
                 "githubUserName": "flowMCP",
-                "githubRepository": "dynamic-tools-middleware",
+                "githubRepository": "mcp-dynamic-tools-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
             }
         ]
@@ -73,24 +73,6 @@ const config = [
                 "title": "x402-mcp-middleware",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            }
-        ]
-    },
-        {
-        'replace': '{{privateShare}}',
-        'preset': 'githubDetailsCodeCoverage',
-        'projects': [
-            {
-                "title": "privateShare-core",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "privateShare-core",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-                        {
-                "title": "privateShare-mcp-middleware",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "privateShare-mcp-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
             }
         ]
