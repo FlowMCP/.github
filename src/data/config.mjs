@@ -20,18 +20,6 @@ const config = [
                 "githubUserName": "flowMCP",
                 "githubRepository": "flowMCP-servers",
                 "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
-                "title": "oauth-middleware",
-                "githubUserName": "flowMCP",
-                "githubRepository": "oauth-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
-                "title": "dynamic-tools-middleware",
-                "githubUserName": "flowMCP",
-                "githubRepository": "mcp-dynamic-tools-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
@@ -60,6 +48,39 @@ const config = [
         ]
     },
     {
+        'replace': '{{mcp-middleware}}',
+        'preset': 'githubDetails',
+        'projects': [
+            {
+                "title": "oauth-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "oauth-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "dynamic-tools-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "mcp-dynamic-tools-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "x402-core",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-core",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "x402-mcp-middleware",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-mcp-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            }
+        ]
+    }
+
+    
+/*
+    {
         'replace': '{{x402}}',
         'preset': 'githubDetails',
         'projects': [
@@ -77,6 +98,7 @@ const config = [
             }
         ]
     }
+*/
 ]
 
 
