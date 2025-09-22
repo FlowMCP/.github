@@ -26,6 +26,12 @@ const config = [
                 "githubUserName": "flowMCP",
                 "githubRepository": "oauth-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "dynamic-tools-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "dynamic-tools-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
