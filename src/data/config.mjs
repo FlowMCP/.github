@@ -44,6 +44,15 @@ const config = [
                 "uptimeRobotId": "m800843065-01b21fc8a0c00272f7e08839",
                 "url": "https://www.flowmcp.org",
                 "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "cloudflare-flowmcp",
+                "githubUserName": "flowMCP",
+                "githubRepository": "cloudflare-flowmcp-authless",
+                "imageUrl": "",
+                "uptimeRobotId": "",
+                "url": "",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
