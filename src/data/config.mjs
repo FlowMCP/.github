@@ -52,7 +52,7 @@ const config = [
                 "imageUrl": "",
                 "uptimeRobotId": "",
                 "url": "",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
