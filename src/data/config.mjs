@@ -11,14 +11,62 @@ const config = [
             },
             {
                 "title": "flowmcp-schemas",
-                "githubUserName": "flowMCP",
+                "githubUserName": "FlowMCP",
                 "githubRepository": "flowMCP-schemas",
                 "githubWorkflowPath": "update-readme.yaml"
             },
             {
                 "title": "flowmcp-servers",
-                "githubUserName": "flowMCP",
+                "githubUserName": "FlowMCP",
                 "githubRepository": "flowMCP-servers",
+                "githubWorkflowPath": "test-on-release.yml"
+            }
+        ]
+    },
+    {
+        'replace': '{{x402-com}}',
+        'preset': 'githubDetails',
+        'projects': [
+            {
+                "title": "x402-core",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-core",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "x402-mcp-middleware",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-mcp-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "x402-mcp-proxy",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-mcp-proxy",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "agent-pays",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "agentPays",
+                "githubWorkflowPath": "test-on-release.yml"
+            }
+        ]
+    },
+    {
+        'replace': '{{experimental}}',
+        'preset': 'githubDetails',
+        'projects': [
+            {
+                "title": "mcp-auth-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "mcp-auth-middleware",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "mcp-dynamic-tools-middleware",
+                "githubUserName": "flowMCP",
+                "githubRepository": "mcp-dynamic-tools-middleware",
                 "githubWorkflowPath": "test-on-release.yml"
             }
         ]
@@ -55,59 +103,7 @@ const config = [
                 "githubWorkflowPath": "test-on-push.yml"
             }
         ]
-    },
-    {
-        'replace': '{{mcp-middleware}}',
-        'preset': 'githubDetails',
-        'projects': [
-            {
-                "title": "mcp-auth-middleware",
-                "githubUserName": "flowMCP",
-                "githubRepository": "mcp-auth-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
-                "title": "mcp-dynamic-tools-middleware",
-                "githubUserName": "flowMCP",
-                "githubRepository": "mcp-dynamic-tools-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
-                "title": "x402-core",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-core",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
-                "title": "x402-mcp-middleware",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            }
-        ]
     }
-
-    
-/*
-    {
-        'replace': '{{x402}}',
-        'preset': 'githubDetails',
-        'projects': [
-            {
-                "title": "x402-core",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-core",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-                        {
-                "title": "x402-mcp-middleware",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
-            }
-        ]
-    }
-*/
 ]
 
 

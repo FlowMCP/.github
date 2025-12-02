@@ -3,12 +3,15 @@
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 {{githubDetails}}
 
-## MCP Middleware
-{{mcp-middleware}}
+## x402.com
+{{x402-com}}
 * `x402-core`: Authorization-based ERC20 payment layer using EIP-3009 and X-PAYMENT headers.
 * `x402-mcp-middleware`: An Express-compatible payment gateway middleware for X402-protected MCP endpoints.
+* `x402-mcp-proxy`: Local MCP proxy that bridges stdio/SSE-based MCP clients to remote x402-protected servers and automatically injects `X-PAYMENT` headers for monetized tools.
+* `agent-pays`: Hackathon reference stack that lets AI agents autonomously pay for MCP tools via x402, combining a remote x402 MCP server with a local proxy for Claude and other MCP clients.
+
+## Experimental
+{{experimental}}
 
 ## Community Server
 {{documentationRepository}}
-
-
