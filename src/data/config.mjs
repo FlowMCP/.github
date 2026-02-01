@@ -20,6 +20,12 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "flowMCP-servers",
                 "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "flowmcp-cli",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "flowMCP-cli",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
@@ -46,10 +52,16 @@ const config = [
                 "githubWorkflowPath": "test-on-release.yml"
             },
             {
-                "title": "agent-pays",
+                "title": "x402-mcp-validator",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "agentPays",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubRepository": "x402-mcp-validator",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "erc8004-registry-parser",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "erc8004-registry-parser",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
