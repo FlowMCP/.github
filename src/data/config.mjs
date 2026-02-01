@@ -46,12 +46,6 @@ const config = [
                 "githubWorkflowPath": "test-on-release.yml"
             },
             {
-                "title": "x402-mcp-proxy",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-proxy",
-                "githubWorkflowPath": "test-on-release.yml"
-            },
-            {
                 "title": "x402-mcp-validator",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-validator",
