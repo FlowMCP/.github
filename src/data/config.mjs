@@ -37,13 +37,13 @@ const config = [
                 "title": "x402-core",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-core",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             },
             {
                 "title": "x402-mcp-middleware",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-middleware",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             },
             {
                 "title": "x402-mcp-validator",
