@@ -31,7 +31,7 @@ const config = [
     },
     {
         'replace': '{{x402-com}}',
-        'preset': 'githubDetails',
+        'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
                 "title": "x402-core",
@@ -55,6 +55,12 @@ const config = [
                 "title": "erc8004-registry-parser",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "erc8004-registry-parser",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": " a2a-agent-validator",
+                "githubUserName": "FlowMCP",
+                "githubRepository": " a2a-agent-validator",
                 "githubWorkflowPath": "test-on-push.yml"
             }
         ]
