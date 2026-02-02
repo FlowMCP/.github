@@ -58,9 +58,9 @@ const config = [
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
-                "title": " a2a-agent-validator",
+                "title": "a2a-agent-validator",
                 "githubUserName": "FlowMCP",
-                "githubRepository": " a2a-agent-validator",
+                "githubRepository": "a2a-agent-validator",
                 "githubWorkflowPath": "test-on-push.yml"
             }
         ]
