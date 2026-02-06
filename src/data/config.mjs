@@ -76,18 +76,6 @@ const config = [
                 "githubWorkflowPath": "test-on-push.yml"
             }
         ]
-    },
-    {
-        'replace': '{{community}}',
-        'preset': 'githubDetails',
-        'projects': [
-            {
-                "title": "lukso-community-server",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "lukso-community-server",
-                "githubWorkflowPath": ""
-            }
-        ]
     }
 ]
 

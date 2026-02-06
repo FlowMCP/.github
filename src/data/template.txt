@@ -26,9 +26,3 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **a2a-agent-validator**: End-to-end validator for A2A Protocol Agent Cards with 12 capability categories
 - **erc8004-registry-parser**: Parser and validator for ERC-8004 trustless agent registration files
-
-## Community
-
-{{community}}
-
-- **lukso-community-server**: LUKSO blockchain schemas exposed as AI-friendly MCP tools

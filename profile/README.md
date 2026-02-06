@@ -45,13 +45,3 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **a2a-agent-validator**: End-to-end validator for A2A Protocol Agent Cards with 12 capability categories
 - **erc8004-registry-parser**: Parser and validator for ERC-8004 trustless agent registration files
-
-## Community
-
-| Title | Updated | Release | Workflow | Issues | License |
-| :-- | :-- | :-- | :-- | :-- | :-- |
-| [lukso-community-server](https://github.com/FlowMCP/lukso-community-server) | <a href="https://api.github.com/repos/FlowMCP/lukso-community-server"><img src="https://img.shields.io/github/last-commit/FlowMCP/lukso-community-server?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/lukso-community-server/releases/"><img src="https://img.shields.io/github/v/release/FlowMCP/lukso-community-server?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/lukso-community-server/actions"></a> | <a href="https://github.com/FlowMCP/lukso-community-server/issues/"><img src="https://img.shields.io/github/issues/FlowMCP/lukso-community-server?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/FlowMCP/lukso-community-server/issues?q=is:issue%20state:closed"><img src="https://img.shields.io/github/issues-closed/FlowMCP/lukso-community-server?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/lukso-community-server/blob/main/LICENSE"><img src="https://img.shields.io/github/license/FlowMCP/lukso-community-server?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
-
-
-
-- **lukso-community-server**: LUKSO blockchain schemas exposed as AI-friendly MCP tools
