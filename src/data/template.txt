@@ -2,27 +2,28 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
-## Core Components
+## Core
 
-{{githubDetails}}
+{{core}}
 
 - **flowmcp-cli**: Command-line interface for developing, validating, and managing FlowMCP API schemas
 - **flowmcp-core**: Framework for adapting REST APIs into MCP-compatible tools with schema-driven validation
-- **flowmcp-schemas**: 176+ curated API schemas for AI-driven access to Web3, finance, and public data
+- **flowmcp-schemas**: 187+ curated API schemas for AI-driven access to Web3, finance, and public data
 - **flowmcp-servers**: Local (stdio) and remote (HTTP/SSE) servers for deploying FlowMCP schemas
 
-## x402 Payment Layer
+## Payment
 
-{{x402}}
+{{payment}}
 
 - **x402-core**: Multi-chain ERC20 payment layer using EIP-3009 signed authorizations with CAIP-2 network routing
 - **x402-mcp-middleware**: Express middleware for payment-gated MCP servers with automatic routing and JSON-RPC 402 compliance
-- **x402-mcp-validator**: End-to-end MCP server validator for x402 payment support, latency measurement, and protocol compliance
-- **x402-mcp-monitor**: Live dashboard for monitoring x402-enabled MCP servers — [View Dashboard](https://flowmcp.github.io/x402-mcp-monitor/)
 
-## Protocol Validators
+## Agents
 
-{{validators}}
+{{agents}}
 
-- **a2a-agent-validator**: End-to-end validator for A2A Protocol Agent Cards with 12 capability categories
-- **erc8004-registry-parser**: Parser and validator for ERC-8004 trustless agent registration files
+- **x402-mcp-validator**: MCP server validator for x402 payment support, latency measurement, and protocol compliance
+- **a2a-agent-validator**: A2A Protocol Agent Card validator with 12 capability categories
+- **erc8004-registry-parser**: ERC-8004 on-chain agent registration parser and verifier
+- **mcp-agent-assessment**: Unified 4-layer assessment pipeline — orchestrates all validators into a single graded result
+- **x402-mcp-monitor**: Live monitoring dashboard for x402-enabled MCP servers — [View Dashboard](https://flowmcp.github.io/x402-mcp-monitor/)

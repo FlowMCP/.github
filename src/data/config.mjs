@@ -1,6 +1,6 @@
 const config = [
     {
-        'replace': '{{githubDetails}}',
+        'replace': '{{core}}',
         'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
@@ -30,7 +30,7 @@ const config = [
         ]
     },
     {
-        'replace': '{{x402}}',
+        'replace': '{{payment}}',
         'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
@@ -44,25 +44,19 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-middleware",
                 "githubWorkflowPath": "test-on-push.yml"
-            },
+            }
+        ]
+    },
+    {
+        'replace': '{{agents}}',
+        'preset': 'githubDetailsCodeCoverage',
+        'projects': [
             {
                 "title": "x402-mcp-validator",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-validator",
                 "githubWorkflowPath": "test-on-push.yml"
             },
-            {
-                "title": "x402-mcp-monitor",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-monitor",
-                "githubWorkflowPath": "collect.yml"
-            }
-        ]
-    },
-    {
-        'replace': '{{validators}}',
-        'preset': 'githubDetailsCodeCoverage',
-        'projects': [
             {
                 "title": "a2a-agent-validator",
                 "githubUserName": "FlowMCP",
@@ -74,6 +68,18 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "erc8004-registry-parser",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "mcp-agent-assessment",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "mcp-agent-assessment",
+                "githubWorkflowPath": "test-on-release.yml"
+            },
+            {
+                "title": "x402-mcp-monitor",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-mcp-monitor",
+                "githubWorkflowPath": "collect.yml"
             }
         ]
     }
