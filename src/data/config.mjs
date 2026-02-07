@@ -79,7 +79,7 @@ const config = [
                 "title": "x402-mcp-monitor",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-monitor",
-                "githubWorkflowPath": "collect.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     }
