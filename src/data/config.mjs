@@ -13,7 +13,7 @@ const config = [
                 "title": "flowmcp-core",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "flowmcp-core",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             },
             {
                 "title": "flowmcp-schemas",
@@ -25,7 +25,7 @@ const config = [
                 "title": "flowmcp-servers",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "flowmcp-servers",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
