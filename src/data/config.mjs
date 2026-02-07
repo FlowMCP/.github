@@ -73,7 +73,7 @@ const config = [
                 "title": "mcp-agent-assessment",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "mcp-agent-assessment",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             },
             {
                 "title": "x402-mcp-monitor",
