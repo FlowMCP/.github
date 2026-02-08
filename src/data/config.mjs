@@ -80,6 +80,40 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-monitor",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "mcp-apps-validator",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "mcp-apps-validator",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "mcp-agent-validator",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "mcp-agent-validator",
+                "githubWorkflowPath": "test-on-push.yml"
+            }
+        ]
+    },
+    {
+        'replace': '{{apps}}',
+        'preset': 'documentation',
+        'projects': [
+            {
+                "title": "x402 Demo MCP Server",
+                "imageUrl": "https://github.com/FlowMCP.png",
+                "uptimeRobotId": "000000000",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "flowmcp-servers",
+                "url": "https://via402-mcp-8m3mr.ondigitalocean.app"
+            },
+            {
+                "title": "MCP Agent Validator",
+                "imageUrl": "https://github.com/FlowMCP.png",
+                "uptimeRobotId": "000000000",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "mcp-agent-validator",
+                "url": "https://lobster-app-xu2x9.ondigitalocean.app"
             }
         ]
     }
