@@ -33,6 +33,4 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 | Name | URL |
 | :-- | :-- |
-| x402 MCP Server | [mcp.via402.com/mcp/streamable](https://mcp.via402.com/mcp/streamable) |
-| x402 FlowMCP Server | [x402.flowmcp.org/mcp/streamable](https://x402.flowmcp.org/mcp/streamable) |
 | MCP Agent Validator | [lobster-app-xu2x9.ondigitalocean.app](https://lobster-app-xu2x9.ondigitalocean.app) |
