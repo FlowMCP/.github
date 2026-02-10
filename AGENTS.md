@@ -8,7 +8,7 @@ FlowMCP is a Model Context Protocol (MCP) framework that provides structured API
 
 ## Repository Overview
 
-FlowMCP consists of 5 main repositories:
+FlowMCP consists of multiple repositories across three pillars:
 
 ### 1. Core Framework
 **flowmcp-core** - Node.js module and specification  
@@ -36,26 +36,45 @@ FlowMCP consists of 5 main repositories:
 - Server Management: https://github.com/FlowMCP/community-server/blob/main/src/SERVER_MANAGER.md
 
 ### 5. Payment Layer (x402 Protocol)
-**x402-core** - Implementation of x402 payment protocol  
+**x402-core** - Implementation of x402 payment protocol
 - Repository: https://github.com/FlowMCP/x402-core
 - Documentation: https://github.com/FlowMCP/x402-core/blob/main/README.md
 
-**x402-mcp-middleware** - Middleware for x402 payment integration  
+**x402-mcp-middleware** - Middleware for x402 payment integration
 - Repository: https://github.com/FlowMCP/x402-mcp-middleware
+
+### 6. Agent Validators
+**x402-mcp-validator** - MCP server validator with x402 payment checks
+- Repository: https://github.com/FlowMCP/x402-mcp-validator
+
+**a2a-agent-validator** - A2A Protocol Agent Card validator
+- Repository: https://github.com/FlowMCP/a2a-agent-validator
+
+**erc8004-registry-parser** - ERC-8004 on-chain agent registration parser
+- Repository: https://github.com/FlowMCP/erc8004-registry-parser
+
+**mcp-apps-validator** - MCP Apps UI extension validator
+- Repository: https://github.com/FlowMCP/mcp-apps-validator
+
+**mcp-agent-assessment** - Unified 5-layer assessment pipeline
+- Repository: https://github.com/FlowMCP/mcp-agent-assessment
+
+**mcp-agent-validator** - Multi-protocol web validator
+- Repository: https://github.com/FlowMCP/mcp-agent-validator
 
 ## Getting Started
 
 1. **Learn the basics**: Start with [flowmcp-core README](https://github.com/FlowMCP/flowmcp-core/blob/main/README.md)
 2. **Understand schemas**: Browse the [visual schema collection](https://flowmcp.github.io/flowmcp-schemas/)
 3. **Try implementations**: Use ready servers from [flowmcp-servers](https://github.com/FlowMCP/flowmcp-servers)
-4. **Join community**: Explore the [community-server](https://github.com/FlowMCP/community-server)
+4. **Validate agents**: Use [mcp-agent-validator](https://github.com/FlowMCP/mcp-agent-validator) for multi-protocol validation
 
 ## Navigation
 
 - For **technical specifications**: See flowmcp-core/spec/
 - For **available APIs**: See flowmcp-schemas/schemas/
 - For **server deployment**: See flowmcp-servers/
-- For **community contributions**: See community-server/
 - For **payment integration**: See x402-core/
+- For **agent validation**: See mcp-agent-validator/
 
 This document provides the overview - detailed functionality and implementation guides are available in each repository's documentation.

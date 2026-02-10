@@ -76,9 +76,15 @@ const config = [
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
-                "title": "x402-mcp-monitor",
+                "title": "mcp-apps-validator",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-monitor",
+                "githubRepository": "mcp-apps-validator",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "mcp-agent-validator",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "mcp-agent-validator",
                 "githubWorkflowPath": "test-on-push.yml"
             }
         ]
