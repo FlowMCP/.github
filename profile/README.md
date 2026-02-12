@@ -44,11 +44,11 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 
 - **x402-mcp-validator**: MCP server validator for x402 payment support, latency measurement, and protocol compliance
-- **a2a-agent-validator**: A2A Protocol Agent Card validator with 12 capability categories
+- **a2a-agent-validator**: A2A Protocol Agent Card validator with AP2 (Agent Payments Protocol) and x402 detection — 16 capability categories and 17 entry fields
 - **erc8004-registry-parser**: ERC-8004 on-chain agent registration parser and verifier
-- **mcp-agent-assessment**: Unified 5-layer assessment pipeline — orchestrates all validators into a single graded result
+- **mcp-agent-assessment**: Unified assessment pipeline for MCP, A2A/AP2, x402, OAuth, MCP Apps, ERC-8004, OASF, and on-chain reputation
 - **mcp-apps-validator**: MCP Apps UI extension validator for ui:// resources, CSP, permissions, theming, and display modes
-- **mcp-agent-validator**: Multi-protocol web validator for MCP, A2A, x402, OAuth, and MCP Apps endpoints
+- **mcp-agent-validator**: Web-based multi-protocol validator — MCP, A2A/AP2, x402, OAuth, MCP Apps, ERC-8004, OASF classification, and on-chain reputation
 
 ## Apps
 
