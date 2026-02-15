@@ -17,6 +17,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **x402-core**: Multi-chain ERC20 payment layer using EIP-3009 signed authorizations with CAIP-2 network routing
 - **x402-mcp-middleware**: Express middleware for payment-gated MCP servers with automatic routing and JSON-RPC 402 compliance
+- **x402-flowmcp-org**: Payment-gated MCP server with X402 on-chain payments, Avalanche data, and A2A protocol support
 
 ## Agents
 

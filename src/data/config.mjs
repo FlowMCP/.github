@@ -44,6 +44,12 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-mcp-middleware",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "x402-flowmcp-org",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "x402-flowmcp-org",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     },
