@@ -32,7 +32,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 - **x402-mcp-middleware**: Express middleware for payment-gated MCP servers with automatic routing and JSON-RPC 402 compliance
 - **x402-flowmcp-org**: Payment-gated MCP server with X402 on-chain payments, Avalanche data, and A2A protocol support
 
-## Agents
+## Validation
 
 | Title | Updated | Release | Workflow | Coverage | Issues | License |
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
@@ -57,3 +57,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 | Name | URL |
 | :-- | :-- |
 | AgentProbe | [agentprobe.xyz](https://agentprobe.xyz) |
+| x402 MCP Server | [x402.flowmcp.org/mcp/streamable](https://x402.flowmcp.org/mcp/streamable) |
+
+- **AgentProbe**: Web-based multi-protocol validator for AI agent endpoints across HTTP, MCP, A2A/AP2, x402, OAuth, MCP Apps, HTML, and ERC-8004
+- **x402 MCP Server**: Demo MCP server with x402 payment gating on testnets via Streamable HTTP transport

@@ -54,7 +54,7 @@ const config = [
         ]
     },
     {
-        'replace': '{{agents}}',
+        'replace': '{{validation}}',
         'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
