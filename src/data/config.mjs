@@ -22,6 +22,12 @@ const config = [
                 "githubWorkflowPath": "update-readme.yaml"
             },
             {
+                "title": "flowmcp-spec",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "flowmcp-spec",
+                "githubWorkflowPath": "generate-llms-txt.yml"
+            },
+            {
                 "title": "flowmcp-servers",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "flowmcp-servers",
