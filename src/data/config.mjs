@@ -16,10 +16,10 @@ const config = [
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
-                "title": "flowmcp-schemas",
+                "title": "flowmcp-schemas-public",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "flowmcp-schemas",
-                "githubWorkflowPath": "update-readme.yaml"
+                "githubRepository": "flowmcp-schemas-public",
+                "githubWorkflowPath": "test-on-push.yml"
             },
             {
                 "title": "flowmcp-spec",
