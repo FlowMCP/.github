@@ -2,6 +2,8 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
+📖 [docs.flowmcp.org](https://flowmcp.github.io)
+
 ## Core
 
 {{core}}
@@ -25,13 +27,4 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 {{validation}}
 
 - **mcp-agent-server**: MCP server with AI agent-powered tools built on FlowMCP schemas
-
-## Apps
-
-| Name | URL |
-| :-- | :-- |
-| [AgentProbe](https://github.com/agentprobe) | [agentprobe.xyz](https://agentprobe.xyz) |
-| x402 MCP Server | [x402.flowmcp.org/mcp/streamable](https://x402.flowmcp.org/mcp/streamable) |
-
-- **[AgentProbe](https://github.com/agentprobe)**: Multi-protocol agent endpoint validator — own GitHub organization with 6 repositories
-- **x402 MCP Server**: Demo MCP server with x402 payment gating on testnets via Streamable HTTP transport
+- **[AgentProbe](https://github.com/agentprobe)**: Multi-protocol agent endpoint validator — own GitHub organization
