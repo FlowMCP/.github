@@ -64,40 +64,10 @@ const config = [
         'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
-                "title": "x402-mcp-validator",
+                "title": "mcp-agent-server",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "x402-mcp-validator",
-                "githubWorkflowPath": "test-on-push.yml"
-            },
-            {
-                "title": "a2a-agent-validator",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "a2a-agent-validator",
-                "githubWorkflowPath": "test-on-push.yml"
-            },
-            {
-                "title": "erc8004-registry-parser",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "erc8004-registry-parser",
-                "githubWorkflowPath": "test-on-push.yml"
-            },
-            {
-                "title": "mcp-agent-assessment",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "mcp-agent-assessment",
-                "githubWorkflowPath": "test-on-push.yml"
-            },
-            {
-                "title": "mcp-apps-validator",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "mcp-apps-validator",
-                "githubWorkflowPath": "test-on-push.yml"
-            },
-            {
-                "title": "mcp-agent-validator",
-                "githubUserName": "FlowMCP",
-                "githubRepository": "mcp-agent-validator",
-                "githubWorkflowPath": "test-on-push.yml"
+                "githubRepository": "mcp-agent-server",
+                "githubWorkflowPath": "test-on-release.yml"
             }
         ]
     }
