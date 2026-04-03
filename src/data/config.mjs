@@ -55,7 +55,7 @@ const config = [
                 "title": "x402-flowmcp-org",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "x402-flowmcp-org",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
@@ -67,7 +67,7 @@ const config = [
                 "title": "mcp-agent-server",
                 "githubUserName": "FlowMCP",
                 "githubRepository": "mcp-agent-server",
-                "githubWorkflowPath": "test-on-release.yml"
+                "githubWorkflowPath": "build.yml"
             }
         ]
     }
