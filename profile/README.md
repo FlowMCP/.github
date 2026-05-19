@@ -2,7 +2,7 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
-📖 [docs.flowmcp.org](https://flowmcp.github.io)
+📖 [flowmcp.github.io](https://flowmcp.github.io)
 
 ## Core
 
