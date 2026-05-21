@@ -2,7 +2,14 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
-📖 [flowmcp.github.io](https://flowmcp.github.io)
+[Documentation →](https://flowmcp.github.io)
+
+## Choose your entry point
+
+- **[Hackathon Builder — Mira](https://flowmcp.github.io/quickstart/quickstart/)** — Build an MCP server in <60s with `claude /flowmcp-hackathon-onboarding`.
+- **[AI Engineer — Daniel](https://flowmcp.github.io/specification/overview/)** — Architecture in 30 min — Concepts + Specification + Reference.
+- **[Schema Maintainer — Sofia](https://flowmcp.github.io/specification/schema-format/)** — Strict v3.0.0 schema format with shared lists + validation rules.
+- **[Decision Maker — Anders](https://flowmcp.github.io/about/for-decision-makers/)** — Use cases, comparison, trust, roadmap — in 5 min.
 
 ## Core
 
@@ -56,3 +63,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 
 - **gtfs-sqlite-toolkit**: Convert GTFS Schedule feeds (CSV in ZIP) to queryable SQLite with quality seal, capability detection, and reusable default queries
+
+---
+
+License: MIT · [Sponsors](https://github.com/sponsors/FlowMCP) · [github.com/FlowMCP](https://github.com/FlowMCP)
