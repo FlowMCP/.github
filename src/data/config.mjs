@@ -70,6 +70,18 @@ const config = [
                 "githubWorkflowPath": "build.yml"
             }
         ]
+    },
+    {
+        'replace': '{{addons}}',
+        'preset': 'githubDetailsCodeCoverage',
+        'projects': [
+            {
+                "title": "gtfs-sqlite-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "gtfs-sqlite-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
+            }
+        ]
     }
 ]
 

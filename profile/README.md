@@ -2,7 +2,7 @@
 
 FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., REST interfaces) through a standardized Model Context Protocol (MCP) interface. It allows APIs to be consumed by AI systems in a structured, testable, and semantically consistent way.
 
-📖 [docs.flowmcp.org](https://flowmcp.github.io)
+📖 [flowmcp.github.io](https://flowmcp.github.io)
 
 ## Core
 
@@ -46,3 +46,13 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **mcp-agent-server**: MCP server with AI agent-powered tools built on FlowMCP schemas
 - **[AgentProbe](https://github.com/agentprobe)**: Multi-protocol agent endpoint validator — own GitHub organization
+
+## Add-ons
+
+| Title | Updated | Release | Workflow | Coverage | Issues | License |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| [gtfs-sqlite-toolkit](https://github.com/FlowMCP/gtfs-sqlite-toolkit) | <a href="https://api.github.com/repos/FlowMCP/gtfs-sqlite-toolkit"><img src="https://img.shields.io/github/last-commit/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/gtfs-sqlite-toolkit/releases/"><img src="https://img.shields.io/github/v/release/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/gtfs-sqlite-toolkit/actions"><img src="https://img.shields.io/github/actions/workflow/status/FlowMCP/gtfs-sqlite-toolkit/test-on-push.yml?logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://app.codecov.io/gh/FlowMCP/gtfs-sqlite-toolkit"><img src="https://img.shields.io/codecov/c/github/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/gtfs-sqlite-toolkit/issues/"><img src="https://img.shields.io/github/issues/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a><a href="https://github.com/FlowMCP/gtfs-sqlite-toolkit/issues?q=is:issue%20state:closed"><img src="https://img.shields.io/github/issues-closed/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> | <a href="https://github.com/FlowMCP/gtfs-sqlite-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/FlowMCP/gtfs-sqlite-toolkit?color=0E1116&logo=F3A966&logoColor=F3A966&style=flat&label="></a> |
+
+
+
+- **gtfs-sqlite-toolkit**: Convert GTFS Schedule feeds (CSV in ZIP) to queryable SQLite with quality seal, capability detection, and reusable default queries
