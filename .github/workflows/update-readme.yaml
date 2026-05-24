@@ -22,13 +22,13 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: |
-          cd .github
-          npm install
+        run: npm install
+
+      - name: Fetch refs from Spec
+        run: npm run fetch-refs
 
       - name: Run Node.js Script
-        run: |
-          node index.mjs
+        run: node index.mjs
 
       - name: Commit and Push Changes
         run: |
