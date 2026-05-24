@@ -8,7 +8,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **[Hackathon Builder](https://flowmcp.github.io/quickstart/quickstart/)** — Build an MCP server in <60s with `claude /flowmcp-hackathon-onboarding`.
 - **[AI Engineer](https://flowmcp.github.io/specification/overview/)** — Architecture in 30 min — Concepts + Specification + Reference.
-- **[Schema Maintainer](https://flowmcp.github.io/specification/schema-format/)** — Strict v4.0.0 schema format with shared lists + validation rules.
+- **[Schema Maintainer](https://flowmcp.github.io/specification/schema-format/)** — Strict v{{spec.currentVersion}} schema format with shared lists + validation rules.
 - **[Decision Maker](https://flowmcp.github.io/about/for-decision-makers/)** — Use cases, comparison, trust, roadmap — in 5 min.
 
 ## Core
@@ -18,7 +18,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 - **flowmcp-cli**: Command-line interface for developing, validating, and managing FlowMCP API schemas
 - **flowmcp-core**: Framework for adapting REST APIs into MCP-compatible tools with schema-driven validation
 - **flowmcp-schemas**: 530+ curated API schemas for AI-driven access to Web3, finance, and public data
-- **flowmcp-spec**: FlowMCP v4.0.0 specification — 24 spec documents, reference examples, LLM-consumable [llms.txt](https://raw.githubusercontent.com/FlowMCP/flowmcp-spec/refs/heads/main/spec/v4.0.0/llms.txt)
+- **flowmcp-spec**: FlowMCP v{{spec.currentVersion}} specification — 24 spec documents, reference examples, LLM-consumable [llms.txt]({{spec.llmsTxtUrl}})
 - **flowmcp-servers**: Local (stdio) and remote (HTTP/SSE) servers for deploying FlowMCP schemas
 
 ## Payment
