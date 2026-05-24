@@ -1,0 +1,42 @@
+name: Sync Refs from Spec
+
+on:
+    repository_dispatch:
+        types: [refs-updated]
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+jobs:
+    sync:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Use Node.js 22
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Fetch refs from Spec
+              run: npm run fetch-refs
+
+            - name: Render profile/README.md
+              run: npm start
+
+            - name: Commit changes
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  if [[ -n "$(git status --porcelain profile/README.md)" ]]; then
+                      git add profile/README.md
+                      git commit -m "Sync refs from Spec (event: refs-updated) [skip ci]"
+                      git push
+                  else
+                      echo "No changes to commit"
+                  fi
