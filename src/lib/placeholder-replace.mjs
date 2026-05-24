@@ -1,4 +1,4 @@
-const REFS_PLACEHOLDER_REGEX = /\{\{(spec|imports|docs|github|llmsFiles)\.([\w.]+)\}\}/g
+const REFS_PLACEHOLDER_REGEX = /\{\{(spec|imports|docs|github|llmsFiles|stats)\.([\w.]+)\}\}/g
 
 
 const replaceRefsPlaceholders = ( { template, refs } ) => {
@@ -7,7 +7,12 @@ const replaceRefsPlaceholders = ( { template, refs } ) => {
             if( acc === undefined || acc === null ) return undefined
             return acc[ key ]
         }, refs[ root ] )
-        if( value === undefined ) {
+        if( value === undefined || value === null ) {
+            // Stats can be null (Spec-Payload fallback / first build).
+            // Render em-dash instead of crashing the BadgeTable build.
+            if( root === 'stats' ) {
+                return '—'
+            }
             throw new Error( `Refs-Placeholder ohne Match in refs.json: ${ match }` )
         }
         return String( value )
