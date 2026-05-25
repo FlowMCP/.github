@@ -1,0 +1,58 @@
+name: Check Boilerplate Numbers
+
+# Reusable workflow that scans repository source files for hardcoded
+# Schema-/Tool-/Datenquellen-Zahlen and fails when matches outside the
+# whitelist paths are detected.
+#
+# Source-of-Truth for current numbers is flowmcp-schemas-public/stats.json.
+# Pattern is built dynamically from stats.json so the lint rule auto-updates
+# whenever the stats update upstream.
+#
+# Memo 060 Phase 8 / PRD-026 Task A.
+
+on:
+  workflow_call:
+    inputs:
+      whitelist-paths:
+        type: string
+        default: "node_modules,dist,generated,archive,.template.md,.template.mdx,template.txt,stats.json,registry.json,manifest.json,schemas-snapshot.json,refs.json,spec/v2.0.0,spec/v3.0.0,.git"
+        description: "Comma-separated list of path fragments to exclude from scan (default covers build outputs, templates, source-of-truth files, historic spec versions)"
+      stats-url:
+        type: string
+        default: "https://raw.githubusercontent.com/FlowMCP/flowmcp-schemas-public/main/stats.json"
+        description: "URL of the stats.json that defines current boilerplate numbers"
+      additional-patterns:
+        type: string
+        default: ""
+        description: "Pipe-separated extra numeric values to include in the pattern (e.g. legacy values like 187|3100)"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch current stats
+        run: curl -sf "${{ inputs.stats-url }}" -o /tmp/stats.json
+
+      - name: Build pattern
+        id: pattern
+        run: |
+          VALS=$(jq -r '[.count_schemas, .count_unique_datasources, .count_tools] | map(tostring) | unique | join("|")' /tmp/stats.json)
+          if [ -n "${{ inputs.additional-patterns }}" ]; then
+            VALS="${VALS}|${{ inputs.additional-patterns }}"
+          fi
+          echo "pattern=\\b(${VALS})\\b" >> $GITHUB_OUTPUT
+          echo "Built pattern: \\b(${VALS})\\b"
+
+      - name: Scan for hardcoded boilerplate
+        run: |
+          set +e
+          PATTERN='${{ steps.pattern.outputs.pattern }}'
+          EXCLUDE_PATHS="${{ inputs.whitelist-paths }}"
+          bash .github/workflows/check-boilerplate.sh \
+              --pattern "$PATTERN" \
+              --excludes "$EXCLUDE_PATHS"

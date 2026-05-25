@@ -1,0 +1,20 @@
+name: Lint Boilerplate
+
+# Caller for the reusable workflow check-boilerplate.yml located in this repo.
+# Blocks PRs that introduce hardcoded Schema-/Tool-/Datenquellen numbers
+# in source files (Memo 060 Phase 8 PRD-026).
+#
+# profile/README.md is a Build-Output (rendered via index.mjs from
+# src/data/template.txt with stats from fetch-refs.mjs) and is whitelisted.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    uses: ./.github/workflows/check-boilerplate.yml
+    with:
+      whitelist-paths: "node_modules,dist,generated,archive,.template.md,.template.mdx,template.txt,stats.json,registry.json,manifest.json,schemas-snapshot.json,refs.json,spec/v2.0.0,spec/v3.0.0,.git,profile,package-lock.json"
