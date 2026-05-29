@@ -32,6 +32,12 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "flowmcp-servers",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "flowmcp-grading",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "flowmcp-grading",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     },
