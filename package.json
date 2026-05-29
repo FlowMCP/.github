@@ -1,7 +1,7 @@
 {
   "name": "updater",
   "version": "1.0.0",
-  "description": "",
+  "description": "FlowMCP GitHub organization profile generator — renders profile/README.md from refs and templates",
   "main": "index.mjs",
   "type": "module",
   "directories": {
@@ -13,8 +13,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "FlowMCP",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowMCP/.github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlowMCP/.github/issues"
+  },
+  "homepage": "https://github.com/FlowMCP/.github#readme",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "badgetable": "^1.3.3"
   }
