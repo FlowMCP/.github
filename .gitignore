@@ -1,2 +1,5 @@
 node_modules
 src/data/refs.json
+
+# Memo strategy docs (project-level, never in repo)
+.memo/
