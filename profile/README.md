@@ -8,7 +8,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **[Hackathon Builder](https://flowmcp.github.io/quickstart/quickstart/)** — Copy the Hackathon Kit skill snippet into your AI assistant's context and scaffold an MCP server in <60s. Nothing to install.
 - **[AI Engineer](https://flowmcp.github.io/specification/overview/)** — Architecture in 30 min — Concepts + Specification + Reference.
-- **[Schema Maintainer](https://flowmcp.github.io/specification/schema-format/)** — Strict v4.1.0 schema format with shared lists + validation rules.
+- **[Schema Maintainer](https://flowmcp.github.io/specification/schema-format/)** — Strict v4.2.0 schema format with shared lists + validation rules.
 - **[Decision Maker](https://flowmcp.github.io/about/for-decision-makers/)** — Use cases, comparison, trust, roadmap — in 5 min.
 
 ## Core
@@ -26,8 +26,8 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **flowmcp-cli**: Command-line interface for developing, validating, and managing FlowMCP API schemas
 - **flowmcp-core**: Framework for adapting REST APIs into MCP-compatible tools with schema-driven validation
-- **flowmcp-schemas**: 365 curated API schemas across 288 unique datasources
-- **flowmcp-spec**: FlowMCP v4.1.0 specification — 24 spec documents, reference examples, LLM-consumable [llms.txt](https://raw.githubusercontent.com/FlowMCP/flowmcp-spec/main/generated/llms.txt)
+- **flowmcp-schemas**: 373 curated API schemas across 291 unique datasources
+- **flowmcp-spec**: FlowMCP v4.2.0 specification — 24 spec documents, reference examples, LLM-consumable [llms.txt](https://raw.githubusercontent.com/FlowMCP/flowmcp-spec/main/generated/llms.txt)
 - **flowmcp-servers**: Local (stdio) and remote (HTTP/SSE) servers for deploying FlowMCP schemas
 - **flowmcp-grading**: Schema-quality grading system — assesses single-schema and selection-level quality across phases, dimensions, and tiers (autonomous / group-bound)
 
