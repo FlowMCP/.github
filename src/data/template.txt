@@ -42,8 +42,8 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 {{addons}}
 
 - **gtfs-sqlite-toolkit**: Convert GTFS Schedule feeds (CSV in ZIP) to queryable SQLite with quality seal, capability detection, and reusable default queries
-- **geojson-sqlite-toolkit**: Convert GeoJSON FeatureCollections (RFC 7946) into sealed, spatially queryable SQLite with auto-injected spatial tools
-- **csv-tsv-sqlite-toolkit**: Convert geo CSV/TSV into sealed SQLite with a mandatory parse config (no silent defaults) and auto-injected spatial tools
+- **geojson-sqlite-toolkit**: Load GeoJSON FeatureCollections (RFC 7946) from a URL into memory and serve spatially queryable, auto-injected spatial tools
+- **csv-tsv-sqlite-toolkit**: Load geo CSV/TSV from a URL into memory with a mandatory parse config (no silent defaults) and auto-injected spatial tools
 
 ---
 
