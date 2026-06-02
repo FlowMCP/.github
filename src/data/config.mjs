@@ -86,6 +86,18 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "gtfs-sqlite-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "geojson-sqlite-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "geojson-sqlite-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "csv-tsv-sqlite-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "csv-tsv-sqlite-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     }
