@@ -104,6 +104,12 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "geo-overpass-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "time-csv-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "time-csv-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     }
