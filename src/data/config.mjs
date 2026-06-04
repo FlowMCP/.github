@@ -82,21 +82,21 @@ const config = [
         'preset': 'githubDetailsCodeCoverage',
         'projects': [
             {
-                "title": "gtfs-sqlite-toolkit",
+                "title": "geo-gtfs-toolkit",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "gtfs-sqlite-toolkit",
+                "githubRepository": "geo-gtfs-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
-                "title": "geojson-sqlite-toolkit",
+                "title": "geo-geojson-toolkit",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "geojson-sqlite-toolkit",
+                "githubRepository": "geo-geojson-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
-                "title": "csv-tsv-sqlite-toolkit",
+                "title": "geo-csv-tsv-toolkit",
                 "githubUserName": "FlowMCP",
-                "githubRepository": "csv-tsv-sqlite-toolkit",
+                "githubRepository": "geo-csv-tsv-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
             },
             {
