@@ -110,6 +110,18 @@ const config = [
                 "githubUserName": "FlowMCP",
                 "githubRepository": "time-csv-toolkit",
                 "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "geo-dzt-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "geo-dzt-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
+            },
+            {
+                "title": "geo-zhv-toolkit",
+                "githubUserName": "FlowMCP",
+                "githubRepository": "geo-zhv-toolkit",
+                "githubWorkflowPath": "test-on-push.yml"
             }
         ]
     }
