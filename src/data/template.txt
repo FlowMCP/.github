@@ -46,6 +46,8 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 - **geo-csv-tsv-toolkit**: Load geo CSV/TSV from a URL into memory with a mandatory parse config (no silent defaults) and auto-injected spatial tools
 - **geo-overpass-toolkit**: Query OpenStreetMap via the Overpass API as a live-query source — curated multi-key categories, pre-built combined selections, and reusable spatial methods (nearPoint, inBoundingBox, discoverCategories, runOverpassQL)
 - **time-csv-toolkit**: Load event CSVs from a URL into memory with a mandatory parse config (no silent defaults) and run deterministic, structured date methods (addInterval, eventsInRange, eventsInCalendarWeek, timeResolve) with additive ISO-8601 normalization
+- **geo-dzt-toolkit**: Query the DZT Knowledge Graph (Open Data Germany) as a live-query geo source — SPARQL bbox-FILTER + client-side Haversine (no GeoSPARQL), RFC 7946 lon-first FeatureCollections, plus name/SPARQL search
+- **geo-zhv-toolkit**: Convert the German central stop registry (zHV / Zentrales Haltestellenverzeichnis, DELFI) XML into a sealed SQLite stop directory (DHID + coordinates + AGS) with a heuristic EVA↔DHID bridge
 
 ---
 
