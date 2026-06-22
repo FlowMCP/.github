@@ -1,0 +1,81 @@
+name: Check Outward-Facing Content
+
+# Reusable workflow that scans a repository's outward-facing content for
+# inward-facing leaks — internal record IDs (Memo NNN, M0NN), internal
+# decision/chapter references (PRD-NN, Kap.), German structure markers on
+# English pages (Soll-), and the private source-repository name. It fails when
+# any match is found outside the allowlist paths.
+#
+# Companion local script: check-outward-facing.sh (same scan, runnable locally).
+
+on:
+  workflow_call:
+    inputs:
+      allowlist-paths:
+        type: string
+        default: "node_modules,dist,generated,archive,.git,.template.md,.template.mdx,public/spec-generated,spec/v2.0.0,spec/v3.0.0,spec/v4.0.0,spec/v4.1.0,spec/v4.2.0"
+        description: "Comma-separated path fragments to exclude (build outputs, templates, frozen historical version directories)"
+      pattern:
+        type: string
+        default: ""
+        description: "Optional ERE override for the leak pattern. Empty uses the built-in high-confidence pattern."
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan for inward-facing leaks
+        shell: bash
+        run: |
+          set -u
+          DEFAULT_PATTERN='(Memo [0-9]|\bM0[0-9]{2}\b|flowmcp-schemas-private|\bKap\.|\bPRD-[0-9]|Soll-|\bREV-0[0-9])'
+          PATTERN='${{ inputs.pattern }}'
+          [ -z "$PATTERN" ] && PATTERN="$DEFAULT_PATTERN"
+          EXCLUDES="${{ inputs.allowlist-paths }}"
+
+          EXCLUDE_FLAGS=""
+          PATH_PREFIX_FILTERS=""
+          IFS=',' read -ra ITEMS <<< "$EXCLUDES"
+          for item in "${ITEMS[@]}"; do
+              item_trim=$(echo "$item" | sed 's/^ *//; s/ *$//')
+              [ -z "$item_trim" ] && continue
+              case "$item_trim" in
+                  *.template.md|*.template.mdx|*.template.txt|template.txt|*.lock)
+                      EXCLUDE_FLAGS="$EXCLUDE_FLAGS --exclude=$item_trim"
+                      ;;
+                  */*)
+                      PATH_PREFIX_FILTERS="$PATH_PREFIX_FILTERS|./$item_trim/"
+                      ;;
+                  *)
+                      EXCLUDE_FLAGS="$EXCLUDE_FLAGS --exclude-dir=$item_trim --exclude=$item_trim"
+                      ;;
+              esac
+          done
+
+          INCLUDE_FLAGS="--include=*.md --include=*.mdx --include=*.astro --include=*.txt"
+
+          set +e
+          RAW_HITS=$(grep -rnE $INCLUDE_FLAGS $EXCLUDE_FLAGS "$PATTERN" . 2>/dev/null || true)
+
+          if [ -n "$PATH_PREFIX_FILTERS" ]; then
+              FILTER_RE="${PATH_PREFIX_FILTERS#|}"
+              HITS=$(echo "$RAW_HITS" | grep -vE "^($FILTER_RE)" || true)
+          else
+              HITS="$RAW_HITS"
+          fi
+
+          if [ -n "$HITS" ]; then
+              echo "::error::Inward-facing content detected on an outward-facing surface."
+              echo "$HITS"
+              echo ""
+              echo "How to fix:"
+              echo "  - Remove internal record IDs (Memo NNN, M0NN), decision/chapter refs (PRD-NN, Kap.),"
+              echo "    German structure markers (Soll-), and the private source-repository name."
+              echo "  - Use neutral, English, outward-safe phrasing (e.g. 'the schemas repository')."
+              echo "  - Add a documented allowlist entry only for genuine false positives."
+              exit 1
+          fi
+
+          echo "OK: no inward-facing leaks detected (pattern: $PATTERN)"
