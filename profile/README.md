@@ -26,7 +26,7 @@ FlowMCP is a framework designed to adapt and expose existing web APIs (e.g., RES
 
 - **flowmcp-cli**: Command-line interface for developing, validating, and managing FlowMCP API schemas
 - **flowmcp-core**: Framework for adapting REST APIs into MCP-compatible tools with schema-driven validation
-- **flowmcp-schemas**: 373 curated API schemas across 291 unique datasources
+- **flowmcp-schemas**: — curated API schemas across — unique datasources
 - **flowmcp-spec**: FlowMCP v4.3.0 specification — 24 spec documents, reference examples, LLM-consumable [llms.txt](https://raw.githubusercontent.com/FlowMCP/flowmcp-spec/main/generated/llms.txt)
 - **flowmcp-servers**: Local (stdio) and remote (HTTP/SSE) servers for deploying FlowMCP schemas
 - **flowmcp-grading**: Schema-quality grading system — assesses single-schema and selection-level quality across phases, dimensions, and tiers (autonomous / group-bound)
